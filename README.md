@@ -1,16 +1,16 @@
-# My PHP Library
+# VGGPAY Payment Gateway
 
-A simple PHP library example.
+Accept Crypto on Your Website,Grow your business with a gateway that will save you time and money
+
 
 ## Installation
-
+ 
 You can install this library via Composer:
 
 ```bash
-composer require vggpay/my-php-library
+composer require vggpay/vggpay-php
 
-php vendor/bin/phpunit tests/MyLibraryTest.php
-
+ 
 
 扩展
 curl、openssl
