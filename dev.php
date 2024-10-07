@@ -1,6 +1,6 @@
 <?php
 
-//require 'vendor/autoload.php'; // 引入 Composer 自动加载文件
+
 require 'src/PaymentGateway.php';
 
 use VggPay\PaymentGateway;
@@ -13,7 +13,6 @@ $config = [
 ];
 
 
-// 创建实例并调用方法
 $gateway = new PaymentGateway($config);
 $OrderData = [
     "m_orderid" => 'yourShopOrder12345679',
@@ -34,3 +33,4 @@ $createTopUp = $gateway->createTopUp([
     "notify_url" => 'https://my-notify-api.com',
 ]);
 var_dump($createTopUp);
+
