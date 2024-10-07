@@ -3,7 +3,7 @@
   "description": "VGGPAY Payment Gateway",
   "type": "library",
   "require": {
-    "php": "^5.5",
+    "php": "^5.5 || ^7.0 || ^8.0 ",
     "ext-openssl": "*",
     "ext-curl": "*",
     "ext-json": "*"
