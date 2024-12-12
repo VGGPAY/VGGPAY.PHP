@@ -158,6 +158,19 @@ class VGGPaymentGateway
     }
 
 
+
+    function decryptData($encryptedData)
+    {
+        $Key = hex2bin($this->SecretKey);  // Convert the hexadecimal SecretKey to binary format
+        $iv = hex2bin($this->SecretIV); // Convert IV from hexadecimal to binary
+        $method = 'AES-256-CBC'; // Encryption algorithm and mode
+        $encrypted = base64_decode($encryptedData); // Decode Base64 encoded encrypted data
+        // Decrypt data using OpenSSL
+        $decrypted = openssl_decrypt($encrypted, $method, $Key, OPENSSL_RAW_DATA, $iv);
+        // Return the decrypted original data (assuming decrypted data is in JSON format)
+        return json_decode($decrypted, true);
+    }
+
     function ErrorDetection()
     {
         if (empty($this->projectId)) {

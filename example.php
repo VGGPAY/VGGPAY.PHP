@@ -31,3 +31,22 @@ $createTopUp = $gateway->createTopUp([
 ]);
 var_dump($createTopUp);
 
+
+
+
+// VGGPay sends callback data to your server. Here is an example of how to decrypt the callback data.
+
+$data = "jdtdW1+nP8D3geSHQ0+5h0V5Dpez3Lmon0dpW6Dd4BnOEPDqdWNeuow7MM0XHxshHDJxP1QXslO81Enw+JryoRqEWCQYaS282TjqxXtxXfkL1NeLqwlJsKk/EKCnlDGZy2tP5fgCrGaWxAhGWVUtrTppidgFmJrHGh1c5qKFZe0jsxzIY+YI37KyhsOCJzKYgP4GwkQljh+SNF0AuH6vmnI710cczfIXjT2/GJjnJugnVtYuV/W4UN8qgPj3NAZWuDXM6oe1xTufGb8lNU1HctbBRheqUU2/xyGqJz8AOZnb9Z6//r7U90vfdhBolZ94PojBucyifPyShnTaNS+Uy4ZB6UmACWmFtDZTjmOzLbm/dL0ppFVxqMbxQjpTr7OeZKHEkMZLoxJygjThoTbUNQspM5DeVgwgeXHBUnlGma9MkOuIPppfbWrGbtlpZVj6";
+
+$decryptData = $gateway->decryptData($data);
+var_dump($decryptData);
+echo 'SUCCESS';
+
+
+
+
+
+
+
+
+
