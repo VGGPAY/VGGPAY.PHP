@@ -1,5 +1,5 @@
 {
-  "name": "vggpay/vggpay-php",
+  "name": "vggpay/vggpay.php",
   "description": "VGGPAY Payment Gateway",
   "type": "library",
   "require": {
@@ -17,3 +17,4 @@
 
   }
 }
+ 
