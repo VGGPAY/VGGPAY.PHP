@@ -1,1 +1,1 @@
-{"version":1,"defects":{"MyLibraryTest::testGreet":5},"times":{"MyLibraryTest::testGreet":0.159}}
+{"version":1,"defects":{"MyLibraryTest::testGreet":5},"times":{"MyLibraryTest::testGreet":0.159,"ExampleTest::testExample":0.005}}
