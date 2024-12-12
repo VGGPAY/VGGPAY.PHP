@@ -1,9 +1,9 @@
 <?php
 
 
-require 'src/PaymentGateway.php';
+require 'src/VGGPaymentGateway.php';
 
-use VggPay\PaymentGateway;
+use VggPay\VGGPaymentGateway;
 
 
 $config = [
@@ -13,7 +13,7 @@ $config = [
 ];
 
 
-$gateway = new PaymentGateway($config);
+$gateway = new VGGPaymentGateway($config);
 $OrderData = [
     "m_orderid" => 'yourShopOrder12345679',
     "currency" => 'EUR',

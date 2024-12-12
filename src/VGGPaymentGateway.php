@@ -5,7 +5,7 @@ namespace VggPay;
 use Exception;
 
 
-class PaymentGateway
+class VGGPaymentGateway
 {
 
 
