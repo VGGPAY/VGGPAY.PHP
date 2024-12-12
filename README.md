@@ -6,7 +6,7 @@ Requires installation or enabling of PHP extensions: curl, openssl
 PHP version: ^5.5 || ^7.0 || ^8.0
 
 
-## example
+## Example
 For a specific example, please refer to the "example.php" file in the root directory.
 
 
@@ -14,5 +14,6 @@ For a specific example, please refer to the "example.php" file in the root direc
 You can install the VggPay PHP SDK via Composer:
 
 ```bash
-composer require vggpay/vggpay-php
+composer require vggpay/vggpay.php
+
 
