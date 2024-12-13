@@ -15,5 +15,10 @@ You can install the VggPay PHP SDK via Composer:
 
 ```bash
 composer require vggpay/vggpay.php
+```
+
+# Error code Description
+https://www.vggpay.com/business-code
+
 
 
